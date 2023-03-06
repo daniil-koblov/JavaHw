@@ -54,6 +54,7 @@ public class JavaHw13 {
         while (x != 5){
             if(x > 0 && x < 5){
                 System.out.println("Результат вычисления равен: " + calk(x) + ".");
+                break;
             }
             while(x < 1 || x > 5){
                 System.out.println("Такого варианта нет. Повторите ввод,\n"
