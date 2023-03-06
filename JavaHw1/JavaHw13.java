@@ -10,18 +10,18 @@ public class JavaHw13 {
                 + "Нажмите 4 для деления,\n"
                 + "Или нажмите 5 для завершения работы.";
     }
-    static double calk(double n, double a, double b){
+    static double calk(double v, double a, double b){
         double c = 0;
-        if (n == 1){
+        if (v == 1){
             c = a + b;
         }
-        if (n == 2){
+        if (v == 2){
             c = a - b;
         }
-        if (n == 3){
+        if (v == 3){
             c = a * b;
         }
-        if (n == 4){
+        if (v == 4){
             c = a / b;
         }
         return c;
@@ -35,12 +35,17 @@ public class JavaHw13 {
         System.out.println("Введите второе число: ");
         double m = numScan.nextDouble();
         while (x != 5){
-            if(x > 0 && x < 5){
-                System.out.println("Результат вычисления равен: " + calk(x, n, m) + ".");
-                System.out.println(menuPrint());
-                double g = numScan.nextDouble();
-                x = g;
+            while(x == 4 && m == 0){
+                System.out.println("На ноль делить нельзя. Повторите ввод второго числа: ");
+                double q = numScan.nextDouble();
+                m = q;
             }
+            if(x > 0 && x < 5){
+                    System.out.println("Результат вычисления равен: " + calk(x, n, m) + ".");
+                    System.out.println(menuPrint());
+                    double g = numScan.nextDouble();
+                    x = g;
+                }
             while(x < 1 || x > 5){
                 System.out.println("Такого варианта нет. Повторите ввод,\n"
                         + "Нажав 1 для сложения,\n"
