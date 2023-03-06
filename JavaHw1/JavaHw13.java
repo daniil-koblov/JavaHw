@@ -20,7 +20,7 @@ public class JavaHw13 {
             System.out.print("Введите вычитаемое: ");
             double b = numScan.nextDouble();
             numScan.close();
-            c = a + b;
+            c = a - b;
         }
         if (n == 3){    
             Scanner numScan = new Scanner(System.in);      
@@ -29,7 +29,7 @@ public class JavaHw13 {
             System.out.print("Введите второй множитель: ");
             double b = numScan.nextDouble();
             numScan.close();
-            c = a + b;
+            c = a * b;
         }
         if (n == 4){   
             Scanner numScan = new Scanner(System.in);        
@@ -38,7 +38,7 @@ public class JavaHw13 {
             System.out.print("Введите вычитаемое: ");
             double b = numScan.nextDouble();
             numScan.close();
-            c = a + b;
+            c = a / b;
         }
         return c;
     }
