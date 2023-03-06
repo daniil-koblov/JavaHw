@@ -50,10 +50,10 @@ public class JavaHw13 {
                         + "Нажмите 3 для умножения,\n"
                         + "Нажмите 4 для деления,\n"
                         + "Или нажмите 5 для завершения работы.");
-        double x = numScan.nextInt();
+        double x = numScan.nextDouble();
         while (x != 5){
             if(x > 0 && x < 5){
-                System.out.println("Результат вычисления равен: " + calk(x) + ".");;
+                System.out.println("Результат вычисления равен: " + calk(x) + ".");
             }
             while(x < 1 || x > 5){
                 System.out.println("Такого варианта нет. Повторите ввод,\n"
@@ -61,8 +61,8 @@ public class JavaHw13 {
                         + "Нажав 2 для вычитания,\n"
                         + "Нажав 3 для умножения,\n"
                         + "Нажав 4 для деления,\n"
-                        + "Или нажав 5 для завершения работы.\n");
-                double r = numScan.nextInt();
+                        + "Или нажав 5 для завершения работы.");
+                double r = numScan.nextDouble();
                 x = r;
             }
         }
