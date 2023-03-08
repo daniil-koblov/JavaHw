@@ -1,31 +1,24 @@
+// РАБОТА НАД ОШИБКАМИ.
 //Задача 2. Вывести все простые числа от 1 до 1000
-import java.util.Scanner;
 
 public class JavaHw12 {
-    static int prime(int n){
+    static boolean prime(int n){
         int count = 0;
         for(int i = 1; i < n + 1; i++){
             if (n % i == 0){
                 count ++;
             }
-        }
-        return count;
-    }
+        }                                           // Задача на вывод простых чисел от 1 до 1000.
+        if(count > 2){                              // В предыдущем варианте решения я просто вводил число и проверял его на простоту.
+            return false;                           // А это не является точным соблюдением ТЗ. Здесь я дополнил решение до правильного,
+        }                                           // сохранив модуль проверки на простоту.
+        return true;                                // Также я число один не добавил в ряд т.к. по определению простое число должно иметь два
+    }                                               // делителя. Число один имеет только один делитель, поэтому оно не является простым.
     public static void main(String[] args){
-        Scanner numScan = new Scanner(System.in);
-        System.out.print("Введите число, которые будет проверено на простоту: ");
-        int x = numScan.nextInt();
-        while(x < 1){
-            System.out.print("Введенное число для проверки должно быть больше нуля. Повторите ввод: ");
-            int b = numScan.nextInt();
-            x = b;
-        }
-        numScan.close();
-        if(prime(x) > 2){
-            System.out.print("Число " + x + " не является простым.");
-        }
-        else{
-            System.out.print("Число " + x + " является простым.");
+        for(int i = 2; i < 1000; i++){
+            if(prime(i) == true){
+                System.out.print(i + " ");
+            }
         }
     }
 }
