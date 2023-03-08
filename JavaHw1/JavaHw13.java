@@ -1,3 +1,5 @@
+// РАБОТА НАД ОШИБКАМИ.
+// Задача 3. Реализовать простой калькулятор.
 import java.util.Scanner;
 
 public class JavaHw13 {
@@ -28,26 +30,23 @@ public class JavaHw13 {
         Scanner numScan = new Scanner(System.in);
         System.out.println("Это простой калькулятор.\n" + menuPrint());
         double x = numScan.nextDouble();
-        while(x < 1 || x > 5){
-            System.out.println("Такого варианта нет, повторите ввод.\n"
-                    + menuPrint());
-            double r = numScan.nextDouble();
-            x = r;
-        }
-        while (x != 5){
-            System.out.println("Введите первое число: ");
-            double n = numScan.nextDouble();
-            System.out.println("Введите второе число: ");
-            double m = numScan.nextDouble();
+        while(x < 1 || x > 5){                                                      // КОМЕНТАРИЙ К ИСПРАВЛЕНИЮ.
+            System.out.println("Такого варианта нет, повторите ввод.\n"             // Убран ввод доп. переменных: 
+                    + menuPrint());                                                 // r = numScan.nextDouble();
+            x = numScan.nextDouble();                                               // x = r;
+        }                                                                           // double q = numScan.nextDouble();
+        while (x != 5){                                                             // m = q;
+            System.out.println("Введите первое число: ");                        // double g = numScan.nextDouble();
+            double n = numScan.nextDouble();                                        // x = g;
+            System.out.println("Введите второе число: ");                        // Они были в 34 и 35, 44 и 45, 49 и 50 строках.
+            double m = numScan.nextDouble();                                        // Предыдущего варианта.
             while(x == 4 && m == 0){
                 System.out.println("На ноль делить нельзя. Повторите ввод второго числа: ");
-                double q = numScan.nextDouble();
-                m = q;
+                m = numScan.nextDouble();
             }
-            System.out.println("Результат вычисления равен: " + calk(x, n, m) + ".");
+            System.out.println("Результат вычисления равен: " + calk(x, n, m) + "." + "\n");
             System.out.println(menuPrint());
-            double g = numScan.nextDouble();
-            x = g;
+            x = numScan.nextDouble();
         }
         System.out.println("Работа завершена.");
         numScan.close();
