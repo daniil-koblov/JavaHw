@@ -25,7 +25,7 @@ public class JavaHw22 {
     }
     public static void main(String[] args) throws IOException{
         Logger logger = Logger.getLogger(JavaHw22.class.getName());
-        FileHandler fh = new FileHandler("logJavaHw2.xml");
+        FileHandler fh = new FileHandler("logJavaHw21.xml");
         logger.addHandler(fh);
         XMLFormatter xml = new XMLFormatter();
         fh.setFormatter(xml);
