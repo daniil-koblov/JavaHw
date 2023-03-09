@@ -55,7 +55,7 @@ public class JavaHw21 {
         return result;
     }
     public static void main(String[] args) throws Exception {
-        String [] list = ReadLineFromFile("JavaHw2dataForSelect.txt"); 
+        String [] list = ReadLineFromFile("JavaHw21dataForSelect.txt");
         System.out.println(list[0]); 
         StringBuilder resultSelect = LineInList(list[0]);
         System.out.println(resultSelect);
