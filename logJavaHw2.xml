@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-03-09T13:29:12.606194200Z</date>
-  <millis>1678368552606</millis>
-  <nanos>194200</nanos>
+  <date>2023-03-09T13:36:22.313799200Z</date>
+  <millis>1678368982313</millis>
+  <nanos>799200</nanos>
   <sequence>0</sequence>
   <logger>JavaHw2.JavaHw22</logger>
   <level>INFO</level>
