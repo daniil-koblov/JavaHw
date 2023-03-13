@@ -9,14 +9,27 @@ public class JavaHw33 {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите длинну списка: ");
         int length = iScanner.nextInt();
-        ArrayList<Integer> arbitraryList = new ArrayList<Integer>();
+        ArrayList<Integer> integerList = new ArrayList<Integer>();
         for(int i = 0; i < length; i++){
             System.out.print("Введите добавляемый элемент в список: ");
             int addNum = iScanner.nextInt();
-            arbitraryList.add(addNum);
+            integerList.add(addNum);
         }
         iScanner.close();
-        System.out.println("Полный список чисел: " + arbitraryList);
-        
+        System.out.println("Полный список чисел: " + integerList);
+        int minNum = integerList.get(0);
+        int maxNum = integerList.get(0);
+        int middle = 0;
+        for(int i = integerList.size() - 1; i >= 0; i--){
+            if(integerList.get(i) < minNum){
+                minNum = integerList.get(i);
+            }
+            if(integerList.get(i) > maxNum){
+                maxNum = integerList.get(i);
+            }
+            middle = middle + integerList.get(i);
+        }
+        middle = middle / 2;
+        System.out.println("Минимальное число равно " + minNum + ", максимальное " + maxNum + ", а среднее " + middle);
     }
 }
