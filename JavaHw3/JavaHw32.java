@@ -18,7 +18,6 @@ public class JavaHw32 {
         }
         iScanner.close();
         System.out.println("Полный список чисел: " + arbitraryList);
-        System.out.println(arbitraryList);
         for(int i = arbitraryList.size() - 1; i >= 0; i--){
             if(arbitraryList.get(i) % 2 == 0){
                 System.out.println("Этот номер удаляется т.к. он четный: " + arbitraryList.get(i));
