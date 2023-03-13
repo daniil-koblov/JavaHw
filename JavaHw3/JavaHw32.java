@@ -17,13 +17,13 @@ public class JavaHw32 {
             arbitraryList.add(addNum);
         }
         iScanner.close();
-        System.out.println("Полный список чисел: " + arbitraryList);
+        System.out.println("\nПолный список чисел: " + arbitraryList + "\n");
         for(int i = arbitraryList.size() - 1; i >= 0; i--){
             if(arbitraryList.get(i) % 2 == 0){
                 System.out.println("Этот номер удаляется т.к. он четный: " + arbitraryList.get(i));
                 arbitraryList.remove(i);
             }
         }
-        System.out.println("Список без четных чисел: " + arbitraryList);
+        System.out.println("\nСписок без четных чисел: " + arbitraryList);
     }
 }
