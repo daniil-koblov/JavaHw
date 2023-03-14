@@ -27,9 +27,9 @@ public class JavaHw33 {
             if(integerList.get(i) > maxNum){
                 maxNum = integerList.get(i);
             }
-            middle = middle + integerList.get(i);
+            middle += integerList.get(i);
         }
-        middle = middle / 2;
+        middle = middle / integerList.size();
         System.out.println("Минимальное число равно " + minNum + ", максимальное " + maxNum + ", а среднее " + middle);
     }
 }
