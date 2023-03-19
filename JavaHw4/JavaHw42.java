@@ -8,17 +8,17 @@ import java.util.LinkedList;
 
 public class JavaHw42 {
     public static void main(String[] args) {
-        LinkedList<Integer> ll = new LinkedList<>();
+        LinkedList<Integer> queuе = new LinkedList<>();
         for (int i = 0; i < 10; i++) {
-            enqueue(ll, getRandomNumber());
+            enqueue(queuе, getRandomNumber());
         }
-        System.out.println(ll);
+        System.out.println(queuе);
 
-        System.out.println(dequeue(ll));
-        System.out.println(ll);
+        System.out.println(dequeue(queuе));
+        System.out.println(queuе);
 
-        System.out.println(first(ll));
-        System.out.println(ll); 
+        System.out.println(first(queuе));
+        System.out.println(queuе); 
     }
 
     public static void enqueue(LinkedList<Integer> ll, int num) {
