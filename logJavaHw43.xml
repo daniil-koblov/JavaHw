@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-03-19T18:45:53.441582400Z</date>
+  <millis>1679251553441</millis>
+  <nanos>582400</nanos>
+  <sequence>0</sequence>
+  <logger>JavaHw4.JavaHw43</logger>
+  <level>WARNING</level>
+  <class>JavaHw4.JavaHw43</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Work calculator</message>
+</record>
+<record>
+  <date>2023-03-19T18:45:53.547780500Z</date>
+  <millis>1679251553547</millis>
+  <nanos>780500</nanos>
+  <sequence>1</sequence>
+  <logger>JavaHw4.JavaHw43</logger>
+  <level>INFO</level>
+  <class>JavaHw4.JavaHw43</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Work calculator</message>
+</record>
+</log>
