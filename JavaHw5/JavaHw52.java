@@ -33,7 +33,6 @@ public class JavaHw52 {
         }
     }
     public static void sortName(Map<String, Integer> map){
-        Map<Integer, ArrayList<String>> sortMap = new HashMap<>();
         ArrayList<Integer> listCount = new ArrayList<>();
         for(var item: map.entrySet()) {
             if (listCount.contains(item.getValue()) == false) listCount.add(item.getValue());
