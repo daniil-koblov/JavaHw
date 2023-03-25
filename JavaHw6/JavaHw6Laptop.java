@@ -2,13 +2,13 @@ package JavaHw6;
 
 public class JavaHw6Laptop {
     private String name;
-    private double ram;
-    private double storageCap;
+    private int ram;
+    private int storageCap;
     private String os;
     private String colour;
     private double diagonal;
 
-    public JavaHw6Laptop(String name, double ram, double storageCap, String os, String colour, double diagonal){
+    public JavaHw6Laptop(String name, int ram, int storageCap, String os, String colour, double diagonal){
         this.name = name;
         this.ram = ram;
         this.storageCap = storageCap;
@@ -34,10 +34,10 @@ public class JavaHw6Laptop {
         
     }
 
-    public double getRam(){
+    public int getRam(){
         return this.ram;
     }
-    public double getStorageCap(){
+    public int getStorageCap(){
         return this.storageCap;
     }
     public String getOS(){
